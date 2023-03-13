@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Laffleur</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Société</b> Laffleur</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="bulbes\Bulbes.html" class="w3-bar-item w3-button">Bulbes</a>
+      <a href="rosiers\Rosiers.html" class="w3-bar-item w3-button">Rosiers</a>
+      <a href="massifs\Massifs.html" class="w3-bar-item w3-button">plantes à massifs</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="HOME.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Dites-le</b></span> <span class="w3-hide-small w3-text-light-grey">avec Laffleur</span></h1>
+  </div>
+</header>
+
+  <!-- Contact Section -->
+<?php
+  mysql_connect("localhost", "root", "");
+  mysql_select_db("base_laffleur");
+?>
+
+
+
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Laissez un commentaire !</p>
+    <form action="http://localhost/site%20Laffleur/php/inscription.php" target="_blank" methods="post">
+      <input class="w3-input w3-border" type="text" placeholder="nom" required name="nom">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="prenom" required name="prenom">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="commentaire" required name="commentaire">
+    </form>
+    <form action="http://localhost/site%20Laffleur/php/connexion.php" target="_blank" methods="post">
+    <button class="w3-button w3-black w3-section" type="submit">
+      <i class="fa fa-paper-plane"></i> SE CONNECTER
+    </button>
+    </form>
+    <form action="http://localhost/site%20Laffleur/php/inscription.php" target="_blank" methods="post">
+    <button class="w3-button w3-black w3-section" type="submit">
+      <i class="fa fa-paper-plane"></i> S'INSCRIRE
+    </button>
+  </form>
+
+
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+
+</div>
+<p><center>Appelez notre service commercial au 03.22.84.65.74 pour recevoir un bon de commande</center></p>
+<!-- End page content -->
+</div>
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Fait par Dallon Lilian</a></p>
+</footer>
+
+</body>
+</html>
